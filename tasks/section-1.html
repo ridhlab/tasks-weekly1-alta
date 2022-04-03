@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../assets/css/weekly-task-page.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>Weekly Tasks</title>
+  </head>
+  <body>
+    <div class="p-4">
+      <div class="rounded-3 bg-info p-2 text-center">
+        <h3 class="fw-bold">Weekly Tasks MSIB Batch 2 Alterra Academy</h3>
+      </div>
+      <div class="my-3 fs-6 text-center">
+        <p class=" fst-italic">How To Be An Ideal Top Seach React JS Front End Engineer</p>
+        <p>By : Moh. Ridwan (kelas A)</p>
+      </div>
+      <div class="py-2">
+        <a href="../index.html">Kembali</a>
+      </div>
+      <div class="bg-info bg-opacity-10 p-3 rounded-3">
+        <div>
+          <h2>Section 1 - Version Control</h2>
+        </div>
+        
+        <div>
+          <h4 id="pengertian">Pengertian</h4>
+          <p><em>Version Control System</em>, atau biasa disingkat VCS, adalah sebuah sistem yang membantu untuk men<em>track</em> perubahan suatu dokumen dari waktu ke waktu. Dalam penggunaannya, VCS banyak digunakan oleh para developer ketika sedang berkontribusi dalam sebuah pengembangan perangkat lunak. Contoh VCS yang biasa digunakan oleh para developer adalah git.</p>
+          <p>Dalam pengoperasiannya, git sering kali diintergrasikan dengan Github. Github adalah sebuah layanan berbasis web yang digunakan oleh para developer untuk memudahkan dalam berkontribusi sebuah projek.  Jika git hanya bisa digunakan di local komputer kita, maka github adalah penghubung antara git yang ada di masing-masing komputer developer. Dengan adanya github, kita sebagai developer dapat berkolaborasi secara <em>realtime</em>, mengecek dan men<em>track</em> perubahan pada kode program, dan memanajemen suatu projek perangkat lunak. Karena keunggulannya itu, github sangat popular di dunia <em>open source</em>. Sehingga tak ayal, github sering dijuluki sosial medianya para programmer. </p>
+          <h4 id="workflow">Workflow</h4>
+          <p>Ketika menggunakan git, kita biasanya dihadapkan dengan tiga keadaan. Git menyebutnya sebagai <em>workflow</em>. Penting untuk mengingat dan memahami konsep dari 3 workflow itu, supaya memudahkan kita dalam berkolaborasi. Tiga keadaan itu adalah : <em>commited</em>, <em>modified</em> dan <em>staged</em>. <em>Commited</em> adalah ketika data perubahan sudah disimpan di <em>local</em> git kita. <em>Modified</em> adalah ketika kita memodifikasi beberapa <em>file</em>, dan belum disimpan di <em>local</em> git kita. Dalam <em>programming</em>, biasanya yang masuk dalam <em>workflow modified</em> yaitu perubahan kode program, atau perubahan nama <em>file</em>. <em>Staged</em> adalah kondisi kita sudah menambahkan data yang diubah ke dalam versi saat ini, tapi belum di<em>commit</em>.</p>
+          <p>Hal yang tak kalah penting untuk dipahami selanjutnya adalah tentang area atau bagian yang ada di dalam git, yaitu <em>working directory</em>, <em>staging area</em>, dan git <em>directory</em>. <em>Working directory</em> adalah directory yang sedang dikerjakan, namun belum masuk ke <em>staging area</em>. Biasanya ketika kita memodifikasi <em>file</em>, maka kita sedang melakukannya di <em>working directory</em>. <em>Staging area</em> adalah sebuah tempat untuk menampung data apa saja yang sudah diubah tapi masih belum masuk ke tahap <em>commit</em>. Sehingga perubahannya masih belum di <em>track</em> oleh <em>local</em> git. Git <em>directory</em> adalah tempat yang berisi file-file yang sudah tersimpan perubahannya.</p>
+          <h4 id="perintah-dasar-git">Perintah Dasar Git</h4>
+          <p>Beberapa perintah yang sering digunakan antara lain :</p>
+          <ol>
+            <li>Git <em>init</em> </li>
+            
+            <p>Perintah ini digunakan untuk membuat sebuah folder di <em>local computer</em> kita menjadi sebuah <em>repository</em>. Ketika folder tersebut menjadi <em>repository</em>, maka akan ada folder .git secara hidden yang berisi informasi mengenai repository tersebut. <em>Syntax</em>nya adalah 
+            <code>git init</code>.</p>
+            
+            <li>Git <em>clone</em></li>
+            
+            <p>Perintah ini digunakan untuk men<em>clone</em> sebuah <em>repository</em> dari github ke dalam komputer kita. Git <em>clone</em> biasanya perintah yang pertama kali kita  gunakan ketika pertama kali ingin berkontribusi dalam sebuah projek yang sudah ada di github. <em>Syntax</em>nya adalah <code>git clone &lt;url&gt;</code>.</p>
+            
+            <li>Git <em>remote</em></li>
+            
+            <p>Git <em>remote</em> adalah perintah untuk menghubungkan <em>repository</em> yang ada dalam github. Dalam prakteknya perintah yang biasanya dipake yaitu <code>git remote add &lt;name&gt; &lt;url&gt;</code> untuk menambah daftar <em>remote repository</em>, dan <code>git remote rm &lt;name&gt; &lt;url&gt;</code>  untuk <em>menghapus remote repository</em>.</p>
+            
+            <li>Git <em>status</em></li>
+            
+            <p>Perintah ini digunakan untuk mengetahui status dari <em>file</em>, <em>working tree</em>, dan <em>branch</em> yang sedang aktif. <em>Syntax</em>nya adalah <code>git status</code>. </p>
+            
+            <li>Git <em>branch</em></li>
+            
+            <p>Git <em>branch</em> digunakan untuk melihat <em>branch</em> apa saja yang ada di <em>repository</em> kita. Cukup dengan <code>git branch</code>, maka <em>branch</em> yang terdaftar akan muncul. Untuk menambah <em>branch</em> baru, cukup menuliskan <em>syntax</em> <code>git branch &lt;name&gt;</code>. </p>
+            
+            <li>Git <em>pull</em></li>
+            
+            <p>Sesuai dengan namanya, git <em>pull</em> digunakan untuk menarik <em>remote repository</em> ke <em>local repository</em> kita. Ini akan membuat <em>local repository</em> akan berisi <em>file</em> yang ada di <em>remote repository</em>. <em>Syntax</em>nya <code>git pull &lt;remote-name&gt; &lt;branch&gt;</code>. </p>
+            
+            <li>Git add</li>
+            
+            <p><code>git add &lt;filename&gt;</code> berfungsi untuk menambahkan <em>file</em> ke dalam <em>staging area</em> sehingga siap untuk di <em>commit</em>. Untuk menambahkan semua <em>file</em> yang telah terdeteksi perubahannya, maka tuliskan perintah <code>git add .</code>.</p>
+            
+            <li>Git <em>commit</em></li>
+            
+            <p>Git <em>commit</em> digunakan untuk menyimpan perubahan file ke dalam git <em>directory</em>. Git <em>commit</em> bekerja dengan memindahkan file-file yang ada di <em>staging area</em> ke git <em>directory</em>. <em>Syntax</em>nya yaitu <code>git commit –m “message”</code>. </p>
+            
+            <li>Git <em>push</em></li>
+            
+            <p>Perintah <code>git push &lt;remote-name&gt; &lt;branch&gt;</code> akan memperbarui <em>remote repository branch target</em> di github sama dengan yang ada di <em>local repository</em> kita yang telah tersimpan. </p>
+          </ol>
+        </div>
+        <div>
+          <div>
+            <h2>Task Screenshot</h2>
+          </div>
+          <div class="py-2">
+            <img src="../assets/img/ss-task-git/Branch Network.PNG" alt="task-git" class="ss-task">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
